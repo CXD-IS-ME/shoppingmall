@@ -2,8 +2,6 @@
 import { ref } from 'vue'
 import ChannelSelect from './ChannelSelect.vue'
 import { Plus } from '@element-plus/icons-vue'
-import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import {
   artPublishService,
   artGetDetailService,

@@ -26,7 +26,7 @@ const onUpdateAvatar = async () => {
   ElMessage.success('头像更新成功')
 }
 const goUserLayout =()=>{
-  router.push('/user/layout')  // 跳转到 user/layout 路由
+  router.push('/admin/layout')  // 跳转到 user/layout 路由
 }
 </script>
 

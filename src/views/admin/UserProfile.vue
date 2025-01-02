@@ -7,6 +7,7 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 const formRef = ref()
+const userid = localStorage.getItem('UserID')
 
 // 是在使用仓库中数据的初始值 (无需响应式) 解构无问题
 const {
@@ -18,7 +19,8 @@ const form = ref({
   id,
   Username,
   nickname,
-  Email
+  Email,
+  UserID:userid
 })
 
 const rules = ref({
@@ -48,10 +50,12 @@ const submitForm = async () => {
   // 通知 user 模块，进行数据的更新
   // getUser()
   // 提示用户
+  
   ElMessage.success('修改成功')
+  router.push('/article/manage') 
 }
 const goUserLayout =()=>{
-  router.push('/admin_layout')  // 跳转到 user/layout 路由
+  router.push('/article/manage')  // 跳转到 user/layout 路由
 }
 </script>
 <template>

@@ -66,6 +66,7 @@ const login = async () => {
   router.push('/admin/layout')
   localStorage.setItem('res', JSON.stringify(res.data.data.Username));
   localStorage.setItem('avatar', JSON.stringify(res.data.data.avatar));
+  localStorage.setItem('UserID', JSON.stringify(res.data.data.UserID));
 }
 
 // 切换的时候，重置表单内容

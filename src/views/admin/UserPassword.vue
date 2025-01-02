@@ -75,7 +75,7 @@ const changePassword = async () => {
     const { oldPassword, newPassword, UserID } = form;
     await userUpdatePasswordService({ oldPassword, newPassword, UserID });
     ElMessage.success('密码修改成功');
-    router.push('/login');
+    router.push('/admin/login');
 };
 </script>
 
